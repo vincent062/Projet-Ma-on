@@ -1,43 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ServiceController!
-{% endblock %}
+{% block title %}Hello ServiceController!{% endblock %}
 
 {% block body %}
 
-	<fieldset>
-		<legend>Nous Contactez...</legend>
+	<div class:"photos">
+  {# <img src=" {{asset('img/Salle de bain.jpg')}} " alt="Salle de bains"> #}
+  <img src="{{asset('img/Salle de bain.jpg')}} " alt="Salle de bains" width="500" height="300" >
+  <img src="{{asset('img/extension.jpg')}}" alt="Extensions" width="500" height="300">
+  <img src="{{asset('img/chape fluide.jpg')}}" alt="Chapes fluide" width="500" height="300" >
+  <img src="{{asset('img/terrasse.jpg')}}" alt="Terrasses" width="500" height="300">
+  <img src="{{asset('img/Montage-cuisine-juin-23-663X441.jpg')}}" alt="Cuisines" width="500" height="300" >
+  <img src="{{asset('img/carrelage.jpeg')}}" alt="Carrelages" width="500" height="300" >
+  </div>
 
 
-		<form action="/formulaire" method="post">
-			<ul>
-				<li>
-					<label for="name">Nom&nbsp;:</label>
-					<input type="text" id="name" name="user_name"/>
-				</li>
-				<li>
-					<label for="prenom">Prénom&nbsp;:</label>
-					<input type="text" id="name" name="user_name"/>
-				</li>
-
-				<li>
-					<label for="mail">E-mail&nbsp;:</label>
-					<input type="email" id="mail" name="user_mail"/>
-				</li>
-
-                <li>
-					<label for="phone">Téléphone&nbsp;:</label>
-					<input type="phone" id="phone" name="user_phone"/>
-				</li>
-
-
-
-				<li>
-					<label for="message">message&nbsp;:</label>
-					<textarea id="message" name="user_message"></textarea>
-				</li>
-			</ul>
-		</form>
-	</fieldset>
 
 {% endblock %}

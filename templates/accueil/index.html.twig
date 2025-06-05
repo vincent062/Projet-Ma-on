@@ -5,39 +5,47 @@
 {% block body %}
 <h1>Rénov'Habitat</h1>
 
-	<div class="card" style="width: 18rem;">
-  <img src="C:\Users\CDA\Pictures\images.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class=""></h5>
+	<div class="card card-body" style="width: 80rem">
+  <img src=" {{asset('img/images.jpg')}} " class="card-img-top" alt="...">
+  
+  <div class="">
+    {# <h5 class=""></h5> #}
     <p class="card-text">L’aventure de Rénov’Habitat a débuté au printemps 2005,au coeur de la charmante commune de Souchez,dans les Hauts-de-France.
 Fort d’une solide expérience dans le secteur du batiment et animé par une passion pour la transformation des espaces de vie,Nous 
 avons décidé de fonder une entreprise de maçonnerie à taille humaine,axée sur la qualité,la proximité et la satisfaction client.
 Conscient d’une demande croissante pour des services de rénovation fiables et polyvalents dans la région,l’idée de Rénov’Habitat
 est née d’une volonté de proposer une expertise compléte, allant de la simple pose de carrelage à la rénovation intégrale de maisons.
 L’ambition était claire:devenir le partenaire de confiance des habitants de Souchez et de ses environs.....</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
+
+<div class="w-25">
 	<div id="carouselExample" class="carousel slide">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src=""C:\Users\CDA\Pictures\photo chantier.jpeg"" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src=""C:\Users\CDA\Pictures\istockphoto-1312937071-612x612.jpg"" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src=""C:\Users\CDA\Pictures\Pourquoi couler une chape.jpg"" class="d-block w-100" alt="...">
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
+  <div class="carousel-inner" style= "width:50rem">
+    <div class="carousel-item active">
+      <img src=" {{asset('img/gettyimages-154946883-612x612.jpg')}} " class="d-block w-100" alt="..." width="500" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src=" {{asset('img/Pourquoi couler une chape.jpg')}} " class="d-block w-100" alt="..." width="500" height="300" >
+    </div>
+    <div class="carousel-item">
+      <img src=" {{asset('img/Montage-cuisine-juin-23-663X441.jpg')}} " class="d-block w-100" alt="..." width="500" height="300">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+
+
+
 {% endblock %}

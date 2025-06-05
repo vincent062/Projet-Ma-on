@@ -1,3 +1,56 @@
 body {
     background-color: white;
 }
+
+.container-fluid {
+    background-color: darkgoldenrod;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    border-radius: 15px;
+    /* Bords arrondis pour un look plus doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.973);
+    /* Ombre portée pour un effet de profondeur */
+    
+    
+
+}
+
+.w-25 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    /* Bords arrondis pour un look plus doux */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Ombre portée pour un effet de profondeur */
+    width: 40%
+}
+
+.footer-bar {
+    font-family: 'Inter', sans-serif;
+    /* Police Inter */
+    padding-top: 2rem;
+    /* Pour éviter que la navbar fixe ne cache le contenu en haut */
+    border-radius: 0 0 0.5rem 0.5rem;
+    /* Coins arrondis en bas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.99);
+    /* Ombre */
+    background-color:darkgoldenrod ;
+    max-width: 20000px;
+   }
+
+
+.photos {
+   display: flex;
+   justify-content:space-evenly;
+   align-content: space-around;
+   align-content: space-between;
+   border: 5px solid #f7f2f2;
+   padding: 20px;
+   margin: 20px;
+  
+   }
